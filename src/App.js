@@ -1,13 +1,40 @@
 import React from 'react';
-import XmButton from "./components/xm-button/xm-button.jsx"
+import "./index.css"
+import ImgWrap from "./play/index"
+import ScrollTest from "./play/scrollTest"
+import EditorDemo from "./play/editor"
+import Tabs from "./play/tabs"
 
 
-function App() {
-  return (
-    <div className="App">
-      <XmButton value={"AM按钮"} />
-    </div>
-  );
+class App extends React.Component {
+
+    constructor() {
+        super()
+        this.state = {
+            htmlContent: ""
+        }
+    }
+
+    setHtmlContent = htmlContent => {
+        this.setState({ htmlContent })
+    }
+
+    render () {
+        const { htmlContent } = this.state
+        console.log(htmlContent)
+        return (
+            <div className="App">
+                <ScrollTest />
+                <hr/>
+                <ImgWrap />
+                <EditorDemo setHtmlContent={this.setHtmlContent} />
+                <div className="htmlContent">
+                    {htmlContent}
+                </div>
+                <Tabs />
+            </div>
+        );
+    }
 }
 
 export default App;

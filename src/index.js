@@ -1,6 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import XmButton from "./components/xm-button/xm-button"
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
+export {
+    XmButton
+}

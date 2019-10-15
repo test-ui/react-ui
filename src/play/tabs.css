@@ -1,0 +1,43 @@
+.tabsBox {
+    display: inline-block;
+}
+
+.tabItem {
+    display: inline-block;
+    width: 90px;
+    margin-right: 48px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    color: #333333;
+    text-align: center;
+    cursor: pointer;
+}
+
+.activeTabItem {
+    color: #FF9900;
+}
+
+.lineBox {
+    height: 2px;
+}
+
+.line {
+    display: inline-block;
+    width: 90px;
+    position: absolute;
+    height: 2px;
+    background: #FF9900;
+    transform: translateX(138px);
+    border-radius: 1px;
+    transition: 0.3s all linear;
+}
+
+.htmlContent {
+    background: palegoldenrod;
+}
+
+.editor-container {
+    margin: 0 auto;
+    width: 800px;
+    border: 1px solid #666666;
+}

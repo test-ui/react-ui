@@ -11,7 +11,7 @@ const XmButton = ({ value }) => {
 }
 
 XmButton.propTypes = {
-    text: PropTypes.any
+    value: PropTypes.any
 };
 
 export default XmButton;
